@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>YG ENTERTAINMENT 20周年</title>
+		<link href= "css/styleyy.css" type="text/css" rel="stylesheet"/>
+        <style type="text/css">
+        .STYLE14 {color: #993300}
+
+        .STYLE15 {color: #333333}
+.STYLE17 {color: #999999}
+.STYLE19 {color: #FFFFFF}
+        </style>
+</head> 
+	<body>
+		<span class="STYLE17"></span>		<span class="STYLE17"></span>
+		<div id="titlename">
+		<h1>WE LIKE 2 PARTY </h1>
+		</div>
+		<div id="nav">
+				<h2>YG FAMILY</h2>
+				<ul>
+					<li><span class="STYLE14"></span><a href="">NOTICE</a><span class="STYLE14"></span></li><br/>
+					<li class="STYLE14"><a href="">NEWS</a></li><br/>
+					<li class="STYLE14"><a href="">ARTISTS</a></li><br/>
+					<li class="STYLE14"><a href="">ACTORS</a></li><br/>
+				</ul>
+		</div>
+		<div id=icon><img src="src/ygfml.jpg" width=57.9%>
+		</div>
+    <div id="content">
+		        <h3>YG Entertainment</h3>
+      <p class=firstline>
+      <p> YG Entertainment是韩国最大的娱乐公司之一，也是韩国拥有最多HipHop歌手的公司。
+	      韩国著名的上市娱乐公司（上市日期：2011年11月23日），90年代当红团体“徐太志和孩子们”
+	      团员之一的梁铉锡于1996年所创立。YG Entertainment是韩国专注于R&B和Hiphop音乐
+		  最具代表性的娱乐公司。
+      </p>
+    </div>
+		<style>    
+*{ margin:0; padding:0; list-style:none;}    
+#box{ width:400px; border:1px solid #000; height:155px; margin:30px auto; position:relative; overflow:hidden;}    
+#box ul{ position:absolute; left:0; top:0;}    
+#box ul li{ width:480px; height:200px; float:left; padding:5px;}    
+        </style>    
+<script>    
+window.onload=function(){    
+	var oBox=document.getElementById('box');    
+	var oUl=oBox.children[0];    
+	var aLi=oUl.children;    
+	    
+	//复制一份内容 ，制作出无缝的效果   
+	oUl.innerHTML+=oUl.innerHTML;    
+	oUl.style.width=aLi.length*aLi[0].offsetWidth+'px';    
+	    
+	setInterval(function(){   //开定时器，这样就可以自己切换，无需人工干预。 
+		var l=oUl.offsetLeft-1;  //图片切换，就是移动距离
+		if(l<=-oUl.offsetWidth/7){    
+			l=0;    
+		}    
+		oUl.style.left=l+'px';    
+	},30);    
+};    
+</script>    
+</head>    
+<body>
+
+<div id="box">    
+		<ul>
+		<li><img src="src/2NE1.jpg" width=60% alt="图2" /></a><>
+		<li><img src="src/ikon1.jpg" width=60% alt="图3" /></a><>
+		<li><img src="src/bigbang1.jpg" width=60% alt="图4" /></a><>
+		<li><img src="src/winner.jpg" width=60% alt="图4" /></a><>
+		</ul>
+	</div> 
+
+	 	
+	   <div id="copyright">
+			<p class="copyrighttext">版权所有2016  &copy; </p>
+	   <div id="test">		</div>
+	   </div>
+	</body>
+</html>			
+			
+
